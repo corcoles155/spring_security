@@ -59,7 +59,7 @@ La definición anterior indica que:
 - hasRole() indica el rol que debe de tener el usuario para acceder al recurso especificado
 - httpBasic() configura Basic Authentication
 
-.antMatchers("/users/**").hasRole("ADMIN") --> sólo pueden acceder al recurso "/users/**" los usuarios que tengan rol "
+````.antMatchers("/users/**").hasRole("ADMIN")```` --> sólo pueden acceder al recurso "/users/**" los usuarios que tengan rol "
 ADMIN"
-.antMatchers("/roles/**").permitAll().anyRequest().authenticated() --> pueden acceder al recurso "/roles/**" todos los
+````.antMatchers("/roles/**").permitAll().anyRequest().authenticated()```` --> pueden acceder al recurso "/roles/**" todos los
 usuarios que se hayan autenticado.
